@@ -79,21 +79,23 @@ def generar_reporte(resultados):
     
     try:
         with open('tokens_salida.txt', 'w', encoding='utf-8') as f:
+            
             f.write("\n")
-            f.write(f"{"lexema":<22} -> {"Token"}\n")
+            f.write("ZUÑIGA | VAZQUEZ | ZUÑIGA\n")
+            f.write("="*40 + "\n")            
+            f.write("\n")
+            
+            f.write(f"{"LEXEMA":<22} -> {"TOKEN"}\n")
             f.write(f"{'='*40}\n")
             
             for lexema, token in resultados:
                 f.write(f"  {lexema:<20} -> {token}\n")
-            
-            f.write(f"\n{'='*30}\n")
-            f.write("RESULTADOS\n")
-            f.write(f"{'='*30}\n")
+
+            f.write(f"{'='*40}\n")
             f.write(f"Total de tokens:     {total}\n")
             f.write(f"Palabras clave:      {palabras_clave}\n")
             f.write(f"Identificadores:     {identificadores}\n")
             f.write(f"Errores léxicos:     {errores}\n")
-            f.write(f"{'='*30}\n")
             
         print("\nReporte guardado en 'tokens_salida.txt'")
     except Exception as e:

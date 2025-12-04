@@ -1,48 +1,37 @@
 
 ZUÑIGA | VAZQUEZ | ZUÑIGA
-===========
-
-ANÁLISIS LÉXICO DE 'texto_entrada.txt'
-===========
-
-
-LEXEMA                    CLASIFICACIÓN                 
---------------------------------------------------
-
-==========
-el                        PALABRA_VALIDA_ESPANOL        
-perro                     PALABRA_VALIDA_ESPANOL        
-corrio                    ERROR_ORTOGRAFICO             
-3                         DIGITO                        
-veses                     ERROR_ORTOGRAFICO             
-acia                      ERROR_ORTOGRAFICO             
-la                        PALABRA_VALIDA_ESPANOL        
-kasa                      ERROR_ORTOGRAFICO             
-.                         PUNTUACION                    
-¿                         PUNTUACION                    
-tenemos                   ERROR_ORTOGRAFICO             
-computadoras              ERROR_ORTOGRAFICO             
-?                         PUNTUACION                    
-la                        PALABRA_VALIDA_ESPANOL        
-niña                      ERROR_ORTOGRAFICO             
-comio                     ERROR_ORTOGRAFICO             
-manzanas                  ERROR_ORTOGRAFICO             
-y                         PALABRA_VALIDA_ESPANOL        
-jugó                      ERROR_ORTOGRAFICO             
-en                        PALABRA_VALIDA_ESPANOL        
-el                        PALABRA_VALIDA_ESPANOL        
-parke                     ERROR_ORTOGRAFICO             
-.                         PUNTUACION                    
-
 ==================================================
 
-Total de lexemas detectados: 23
-=====
-Total de palabras validas: 7
-=====
-Total de signos de puntuacion: 4
-=====
-Total de dígitos: 1
-=====
-Total de errores: 11
-=====
+LEXEMA                CLASIFICACIÓN                 
+==================================================
+el                    -> PALABRA_VALIDA_ESPANOL        
+perro                 -> PALABRA_VALIDA_ESPANOL        
+corrio                -> ERROR_ORTOGRAFICO             
+3                     -> DIGITO                        
+veses                 -> ERROR_ORTOGRAFICO             
+acia                  -> ERROR_ORTOGRAFICO             
+la                    -> PALABRA_VALIDA_ESPANOL        
+kasa                  -> ERROR_ORTOGRAFICO             
+.                     -> PUNTUACION                    
+¿                     -> PUNTUACION                    
+tenemos               -> ERROR_ORTOGRAFICO             
+computadoras          -> ERROR_ORTOGRAFICO             
+?                     -> PUNTUACION                    
+la                    -> PALABRA_VALIDA_ESPANOL        
+niña                  -> ERROR_ORTOGRAFICO             
+comio                 -> ERROR_ORTOGRAFICO             
+manzanas              -> ERROR_ORTOGRAFICO             
+y                     -> PALABRA_VALIDA_ESPANOL        
+jugó                  -> ERROR_ORTOGRAFICO             
+en                    -> PALABRA_VALIDA_ESPANOL        
+el                    -> PALABRA_VALIDA_ESPANOL        
+parke                 -> ERROR_ORTOGRAFICO             
+.                     -> PUNTUACION                    
+
+==================================================
+TIPO                  TOTAL                         
+lexemas detectados    23                            
+Palabras validas:     7
+Signos de puntuacion  4
+Dígitos               1
+Errores               11

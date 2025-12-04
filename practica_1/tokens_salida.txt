@@ -1,5 +1,8 @@
 
-lexema                 -> Token
+ZUÑIGA | VAZQUEZ | ZUÑIGA
+========================================
+
+LEXEMA                 -> TOKEN
 ========================================
   inicio               -> KW_INICIO
   sino                 -> KW_SINO
@@ -15,12 +18,8 @@ lexema                 -> Token
   variable123          -> ERROR_LEXICO
   error@               -> ERROR_LEXICO
   malo                 -> IDENTIFICADOR
-
-==============================
-RESULTADOS
-==============================
+========================================
 Total de tokens:     14
 Palabras clave:      8
 Identificadores:     1
 Errores léxicos:     5
-==============================

@@ -96,45 +96,31 @@ def generar_reporte(resultados, archivo_salida='tokens_salida.txt'):
     puntuaciones = sum(1 for _, tipo in resultados if tipo == "PUNTUACION")
     digitos = sum(1 for _, tipo in resultados if tipo == "DIGITO")
     errores = sum(1 for _, tipo in resultados if tipo == "ERROR_ORTOGRAFICO")
-    errores_lista = [lexema for lexema, tipo in resultados if tipo == "ERROR_ORTOGRAFICO"]
-    errores_unicos = list(set(errores_lista))
+    #errores_lista = [lexema for lexema, tipo in resultados if tipo == "ERROR_ORTOGRAFICO"]
+    #errores_unicos = list(set(errores_lista))
     
     try:
         with open(archivo_salida, 'w', encoding='utf-8') as f:
             
             f.write("\n")
             f.write("ZUÑIGA | VAZQUEZ | ZUÑIGA\n")
-            f.write("="*11 + "\n")
-
-            f.write("\n")
-            f.write("ANÁLISIS LÉXICO DE 'texto_entrada.txt'\n")
-            f.write("="*11 + "\n")
+            f.write("="*50 + "\n")            
             f.write("\n")
             
-            
-            f.write("\n")
-            
-            f.write(f"{'LEXEMA':<26}{'CLASIFICACIÓN':<30}\n")
-            f.write("-"*50 + "\n")
-            f.write("\n")
-            f.write("="*10 + "\n")
+            f.write(f"{"LEXEMA":<22}{'CLASIFICACIÓN':<30}\n")
+            f.write("="*50 + "\n")
             for lexema, tipo in resultados:
-                f.write(f"{lexema:<26}{tipo:<30}\n")
+                f.write(f"{lexema:<22}-> {tipo:<30}\n")
             
             f.write("\n")
             f.write("="*50 + "\n")
-            f.write("\n")
+            f.write(f"{"TIPO":<22}{"TOTAL":<30}\n")
+            f.write(f"{"lexemas detectados":<22}{total:<30}\n")
             
-            f.write(f"Total de lexemas detectados: {total}\n")
-            f.write("="*5 + "\n")
-            f.write(f"Total de palabras validas: {palabras_validas}\n")   
-            f.write("="*5 + "\n")
-            f.write(f"Total de signos de puntuacion: {puntuaciones}\n")
-            f.write("="*5 + "\n")
-            f.write(f"Total de dígitos: {digitos}\n")
-            f.write("="*5 + "\n")
-            f.write(f"Total de errores: {errores}\n")
-            f.write("="*5 + "\n")
+            f.write(f"{"Palabras validas:":<22}{palabras_validas}\n")
+            f.write(f"{"Signos de puntuacion":<22}{puntuaciones}\n")
+            f.write(f"{"Dígitos":<22}{digitos}\n")
+            f.write(f"{"Errores":<22}{errores}\n")
             
         print(f"\nReporte guardado en '{archivo_salida}'")
     except Exception as e:
