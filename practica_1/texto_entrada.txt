@@ -1,0 +1,5 @@
+inicio sino
+si contador1 mientras x23
+repite numero_total hasta
+fin imprimir
+variable123 error@ malo

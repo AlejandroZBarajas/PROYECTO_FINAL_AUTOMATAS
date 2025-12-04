@@ -1,0 +1,26 @@
+
+lexema                 -> Token
+========================================
+  inicio               -> KW_INICIO
+  sino                 -> KW_SINO
+  si                   -> KW_SI
+  contador1            -> ERROR_LEXICO
+  mientras             -> KW_MIENTRAS
+  x23                  -> ERROR_LEXICO
+  repite               -> KW_REPITE
+  numero_total         -> ERROR_LEXICO
+  hasta                -> KW_HASTA
+  fin                  -> KW_FIN
+  imprimir             -> KW_IMPRIMIR
+  variable123          -> ERROR_LEXICO
+  error@               -> ERROR_LEXICO
+  malo                 -> IDENTIFICADOR
+
+==============================
+RESULTADOS
+==============================
+Total de tokens:     14
+Palabras clave:      8
+Identificadores:     1
+Errores léxicos:     5
+==============================
